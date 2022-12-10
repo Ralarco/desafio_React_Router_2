@@ -1,0 +1,43 @@
+:root{
+    --bg-black: rgb(37, 37, 37);
+    --color-font--white: rgb(238, 238, 238);
+}
+
+body {
+    margin: 0;
+}
+.barraNav {
+    background-color: var(--bg-black);
+    width: 100%;
+    margin-right: -30px;
+}
+
+.barraNav img {
+    height: 45px;
+}
+
+.barraNav a {
+    display: inline-block;
+    padding: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 7px;
+}
+
+.homeCont {
+    width: 400px;
+    max-width: 500px;
+
+}
+
+.active {
+    text-decoration: none;
+    background-color: rgb(255, 154, 40);
+    color: var(--color-font--white);
+}
+    
+.inactive {
+    text-decoration: none;
+    background-color: cornsilk;
+    color: var(--bg-black);
+}
