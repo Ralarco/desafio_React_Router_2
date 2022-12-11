@@ -3,6 +3,7 @@ import Header from './components/Header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "./views/Home"
 import Pokemones from "./views/Pokemones"
+import Detalles from "./views/Detalles"
 import "./styles/main.css"
 import { useEffect, useState } from 'react';
 import MyContext from './myContext';
@@ -32,7 +33,8 @@ function App() {
 
         <Routes>
           <Route path='/' element={ <Home /> } /> 
-          <Route path='/Pokemones' element={ <Pokemones /> } />
+          <Route path='/Pokemones/' element={ <Pokemones /> } />
+          <Route path='/Detalles/:name' element={ <Detalles /> } />
         </Routes>
       </BrowserRouter>
       
