@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import { Row, Col as div } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import pokeBallImg from "../images/pokebola.png"
 
 const Detalles = () => {
     const { name } = useParams();
@@ -22,18 +20,8 @@ const Detalles = () => {
     }
 
     useEffect(() => {
-        getDetail(
-            
-        )
+        getDetail()
     }, [])
-    console.log(imgUrl)
-    /* const buscaFoto = () => {
-       if(detail.sprites.front_default === null){
-        return pokeBallImg
-       }else{
-        return detail.sprites.front_default
-       }
-    } */
 
 
     return(
