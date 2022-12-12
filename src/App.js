@@ -10,7 +10,7 @@ import MyContext from './myContext';
 
 function App() {
   const [poke, setPoke] = useState([])
-  const pokeUrl = "https://pokeapi.co/api/v2/pokemon/?offset=20&limit=500"
+  const pokeUrl = "https://pokeapi.co/api/v2/pokemon?limit=500&offset=0"
   let getPoke = async () => {
     let data = await fetch(pokeUrl);
     let res = await data.json();

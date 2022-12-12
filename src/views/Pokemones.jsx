@@ -1,4 +1,4 @@
-import { Row, Form, Button } from "react-bootstrap";
+import { Row as div, Form, Button } from "react-bootstrap";
 import { useContext, useEffect, useState } from "react";
 import MyContext from "../myContext";
 import { useNavigate } from "react-router";
@@ -17,20 +17,20 @@ const Pokemones = () => {
     
     
     return(
-        <Row className="justify-content-md-center p-5">
+        <div className="selectorContainer">
             <h1>Selecciona un pokemon</h1>
             <Form>
                 <Form.Select defaultValue="Pokemones" size="lg" onChange={({ target }) => setName(target.value)}>
-                    <option>Open this select menu</option>
+                    <option>Pokemones</option>
                     {poke.map((p) => {
                         return <option key={p.name} value={p.name}>{ p.name }</option>
                     })}
                     
                 </Form.Select>
-                <Button variant="dark" type="submit" onClick={irAPokemones}>Ver Detalle</Button>
+                <Button variant="dark" type="submit" className="m-2 p-3" onClick={irAPokemones}>Ver Detalle</Button>
             </Form>
             
-        </Row>
+        </div>
     )
 }
 
